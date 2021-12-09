@@ -16,6 +16,7 @@ public class creater : MonoBehaviour
     public GameObject SelectedImage;
     public GameObject creatorbody;
     public Renderer g_renderer;
+    
     int colliderflag = 0;
     public Material mat_basic;
     public Material mat_progress;
@@ -86,6 +87,7 @@ public class creater : MonoBehaviour
         yield return new WaitForSecondsRealtime(60);
         this.GetComponent<Renderer>().material = mat_basic;
         c_monitor.colliderflag = 0;
+        c_monitor.monitorText = tempString;
         colliderflag = 0;
     }
 
