@@ -5,6 +5,7 @@
 [Bb]uilds/
 Assets/AssetStoreTools*
 server/haru_main/node_modules/
+server/haru_main/public/texts
 
 # Visual Studio cache directory
 .vs/
