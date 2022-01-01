@@ -9,7 +9,9 @@ const upload = multer({
       cb(null, './public/uploads/');
     },
     filename: function (req, file, cb) {
-      cb(null, new Date().valueOf() + path.extname(file.originalname));
+      var mon = new Date().getMonth() + 1;
+      var day = new Date().getDate();
+      cb(null, mon + day + new Date().valueOf() + path.extname(file.originalname));
     }
   }),
 });
